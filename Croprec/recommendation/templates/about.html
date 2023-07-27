@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <center><h1 style="border: 1px solid black; padding: 10px;">About us</h1></center>
+    <center><img style="border: 4px solid black; height: 300px;" src="/static/crops.jpg"></center>
+    <div class="container">
+    <p style="font-size: 20px; padding: 20px; text-align: justify;">
+        A crop recommendation system is an innovative technological tool that leverages data analytics,
+        machine learning, and agricultural expertise to assist farmers in making informed decisions about crop selection.
+        By analyzing a plethora of variables such as soil quality, weather patterns, historical crop yields, and market demand,
+        these systems can generate personalized suggestions for the best-suited crops for a specific plot of land.
+        The recommendations provided by these systems not only help optimize yield and improve overall agricultural productivity
+        but also contribute to sustainable farming practices by reducing resource wastage and minimizing the environmental impact of crop cultivation.
+        With the integration of real-time data and remote sensing technologies, crop recommendation systems have the potential
+        to revolutionize modern agriculture by empowering farmers with actionable insights and fostering a more efficient, resilient,
+        and profitable farming ecosystem.
+    </p>
+</div>
+    {% block extra_styles %}
+    <style>
+        
+    </style>
+    {% endblock extra_styles %}
+{% endblock body %}

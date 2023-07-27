@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock title %}
+{% block body %}
+<style>
+    
+    .image-container img {
+        width: 100%;
+    }
+</style>
+
+<style>
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #000000; /* Adjust the border style as desired */
+        padding: 20px; /* Adjust the padding value as desired */
+        max-width: 400px; /* Adjust the maximum width of the form container */
+        margin: 0 auto; /* Center the form container horizontally */
+        margin:50px 500px ;
+    }
+</style>
+
+<div class="form-container">
+    <h1>Login</h1>
+    <form method="POST" action="/login/"> 
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter your password"><br><br>
+        <label for="phone">Phone NO:</label>
+        <input type="phone" name="phone" placeholder="Enter your phone No">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+{% endblock body %}
